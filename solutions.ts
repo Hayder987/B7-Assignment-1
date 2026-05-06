@@ -29,10 +29,14 @@ const checkType = (value: StringOrNumber): string => {
 }
 
 
-console.log(checkType("Hello"))
+// problem 4
 
-console.log(checkType(88))
+const getProperty =<T> (obj:T, key: keyof T)=>{
+    return obj[key]
+}
 
+const user = { id: 1, name: "John Doe", age: 21 };
+getProperty(user, "name");
 
 
 
