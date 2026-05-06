@@ -54,7 +54,7 @@ const myBook = {
   author: "Jane Doe",
   publishedYear: 2024,
 };
-console.log(toggleReadStatus(myBook));
+// console.log(toggleReadStatus(myBook));
 
 // Problem 6
 class Person {
@@ -87,5 +87,13 @@ class Student extends Person {
 }
 
 // Sample Input:
-const student = new Student("Alice", 20, "A");
-student.getDetails();
+// const student = new Student("Alice", 20, "A");
+// student.getDetails();
+
+
+// Problem 7
+const getIntersection = (arr1: number[], arr2: number[]): number[] => {
+  return arr1.filter(value => arr2.includes(value));
+}
+
+console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]))
