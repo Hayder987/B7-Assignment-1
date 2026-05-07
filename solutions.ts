@@ -7,12 +7,16 @@ const filterEvenNumbers = (numbers: NumberArr): NumberArr => {
 
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
+
+
 // Problem 2
 const reverseString = (input: string): string => {
   return input.split("").reverse().join("");
 };
 
 reverseString("typescript");
+
+
 
 // Problem 3
 type StringOrNumber = string | number;
@@ -25,6 +29,8 @@ const checkType = (value: StringOrNumber): string => {
   }
 };
 
+
+
 // problem 4
 
 const getProperty = <T>(obj: T, key: keyof T) => {
@@ -33,6 +39,8 @@ const getProperty = <T>(obj: T, key: keyof T) => {
 
 const user = { id: 1, name: "John Doe", age: 21 };
 getProperty(user, "name");
+
+
 
 // problem 5
 
@@ -55,6 +63,9 @@ const myBook = {
   publishedYear: 2024,
 };
 // console.log(toggleReadStatus(myBook));
+
+
+
 
 // Problem 6
 class Person {
@@ -89,6 +100,8 @@ class Student extends Person {
 // Sample Input:
 // const student = new Student("Alice", 20, "A");
 // student.getDetails();
+
+
 
 
 // Problem 7
