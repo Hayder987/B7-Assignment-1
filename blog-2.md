@@ -31,3 +31,19 @@ const getNumber = (value: number): number => {
 
 One generic function can handle all types.
 
+### Example:
+```ts
+const createArray = <T>(...items: T[]): T[]=> {
+  return items;
+}
+```
+
+## Benefits
+
+* Reusable code
+* Type safety
+* Flexible for any data type
+
+## Conclusion
+
+Generics make code simple, reusable, and safe.
